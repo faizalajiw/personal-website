@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Web Portofolio</title>
+</head> 
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Faizal Web</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="uil uil-star nav__icon"></i>Skill
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#history" class="nav__link">
+                            <i class="uil uil-book-alt nav__icon"></i>History
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portofolio" class="nav__link">
+                            <i class="uil uil-document-info nav__icon"></i>Portofolio
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times-circle nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme Button -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i> 
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+        <!-- home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/faizalajiwibowo/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+    
+                        <a href="https://github.com/faizalaji7/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github"></i>
+                        </a>
+    
+                        <a href="https://dribbble.com/Faizalajiw" target="_blank" class="home__social-icon">
+                            <i class="uil uil-dribbble"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x="15" href="assets/img/profil.png"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hai, I'am Faizal</h1>
+                        <h3 class="home__subtitle">Tech Enthusiast</h3>
+                        <p class="home__desc">I'm currently studying at Polytechnic Harapan Bersama majoring in Informatics Engineering. 
+                            I'm very interested in programming.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me<i class="uil uil-message nav__icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll..</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Introduction</span>
+            <div class="about__container container grid">
+                <img src="assets/img/PR_Two Color.png" class="about__img" alt="">
+
+                <div class="about__data">
+                    <p class="about__desc">
+                        I'm a learner who in love with data science and web design.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">5</span>
+                            <span class="about__info-name">Month <br> Experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">5+</span>
+                            <span class="about__info-name">Award<br> Certificate</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">3</span>
+                            <span class="about__info-name">Completed <br> Projects</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/Faizal Aji Wibowo's CV.pdf" class="button button--flex">
+                            Download CV<i class="uil uil-file-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Hardskills</span>
+
+            <div class="skills__container container grid">
+                <!-- <div> -->
+                    <!-- Skill 1 -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Programming</h1>
+                                <span class="skills__subtitle">My skill on programming.</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">50%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">50%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">25%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__python"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">R</h3>
+                                    <span class="skills__number">15%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__r"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-palette skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Design Tools</h1>
+                                <span class="skills__subtitle">My skill on Design.</span>
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__number">50%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__figma"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Canva</h3>
+                                    <span class="skills__number">75%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__canva"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-laptop skills__icon"></i>
+
+                            <div>
+                                <h1 class="skills__title">Programming Tools</h1>
+                                <!-- <span class="skills__subtitle">Kurang dari 1 tahun</span> -->
+                            </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+                        
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Visual Studio Code</h3>
+                                    <span class="skills__number">50%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__vscode"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Google Colab</h3>
+                                    <span class="skills__number">50%</span>   
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percen skills__colab"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <!-- History -->
+        <section class="qualification section" id="history">
+            <h2 class="section__title">History</h2>
+            <span class="section__subtitle">My history about education, achievement and experience.</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#achievement">
+                        <i class="uil uil-trophy qualification__icon"></i>
+                        Achievement
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#experience">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Experience
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- Kualifikasi konten 1 -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- kualifikasi 1.1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">SMA NEGERI 4 TEGAL</h3>
+                                <span class="qualification__subtitle">Science Major</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2016 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- kualifikasi 1.2 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">POLITEKNIK HARAPAN BERSAMA TEGAL</h3>
+                                <span class="qualification__subtitle">Informatics Engineering</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019 - Now
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- kualifikasi 1.3 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">KAMPUS MERDEKA - STUDI INDEPENDEN</h3>
+                                <span class="qualification__subtitle">Microsoft: Data and Artificial Intelligence</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    30 Aug - 23 Dec 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kualifikasi konten 2 -->
+                    <div class="qualification__content" data-content id="achievement">
+                        <!-- kualifikasi 2.1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">INTENTION (INNOVATIVE TECHNOLOGY COMPETITION)</h3>
+                                <span class="qualification__subtitle">Top 5 Finalist</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    NOVEMBER 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- kualifikasi 2.2 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">MICROSOFT CERTIFIED: AZURE AI FUNDAMENTALS</h3>
+                                <span class="qualification__subtitle">Certification Number: I022-2165</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    8 NOVEMBER 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- kualifikasi 2.3 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">MICROSOFT CERTIFIED: AZURE DATA FUNDAMENTALS</h3>
+                                <span class="qualification__subtitle">Certification Number: I025-8343</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    11 NOVEMBER 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- kualifikasi 2.4 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">MICROSOFT CERTIFIED: POWER PLATFORM FUNDAMENTALS
+                                    </h3>
+                                <span class="qualification__subtitle">Certification Number: I028-3139</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    13 NOVEMBER 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kualifikasi konten 3 -->
+                    <div class="qualification__content" data-content id="experience">
+                        <!-- kualifikasi 3.1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">SPEAKER ON PENGABDIAN PADA MASYARAKAT</h3>
+                                <span class="qualification__subtitle">SMK NEGERI 3 TEGAL</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    30 June 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- kualifikasi 3.2 -->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">ONLINE SHOP & SOCIAL MEDIA ADMIN</h3>
+                                <span class="qualification__subtitle">APOTEK MERPATI TEGAL</span>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    July - September 2020
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio -->
+        <section class="portofolio section" id="portofolio">
+            <h2 class="section__title">Portofolio Project</h2>
+            <span class="section__subtitle">Recent project</span>
+            
+            <div class="portofolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Portofolio 1 -->
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portofolio__img">
+
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">Data Exploration & House Price Analysis</h3>
+                            <p class="portofolio__desc">Capstone project output from Kampus Merdeka Independent Study
+                                of Microsoft: Data and Artificial Intelligence. 
+                            </p>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiYjNhMDY4MjUtNTg2Mi00ZmU3LTg2NDgtMzY4MTEwMDc4YmM1IiwidCI6ImQ3Yjk1ZWM0LTlhN2YtNDI2MC1iMmUzLWViNTNmMGFjODQwMSIsImMiOjEwfQ%3D%3D" class="button button--flex button--small portofolio__button">
+                                See
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portofolio 2 -->
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portofolio__img">
+
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">UI Design Marketplace for UMKM</h3>
+                            <p class="portofolio__desc">UI design marketplace for UMKM 
+                                with ui component and animated interactions by Figma. 
+                            </p>
+                            <a href="https://github.com/alfinauzikri/bangkit-web/blob/master/rencana-interface/Investor.png" class="button button--flex button--small portofolio__button">
+                                See
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portofolio 3 -->
+                    <div class="portofolio__content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="" class="portofolio__img">
+
+                        <div class="portofolio__data">
+                            <h3 class="portofolio__title">AI Translator Prototype</h3>
+                            <p class="portofolio__desc">Prototype From English to Javanese Using Speech Recognition built on Python. 
+                            </p>
+                            <a href="https://colab.research.google.com/drive/1ROBxRRjv8XMCt9iO8LstmcArvTa9s4e4?usp=sharing" class="button button--flex button--small portofolio__button">
+                                See
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portofolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portofolio-icon"></i>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Interested -->
+        <section class="interested section">
+            <div class="interested__bg">
+                <div class="interested__container container grid">
+                    <div class="interested__data">
+                        <h2 class="interested__title">Interested?</h2>
+                        <p class="interested__desc">Contact me if you need for a discussion about the project</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message interested__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/Notifications_Monochromatic.png" alt="" class="interested__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes -->
+        <section class="quotes section">
+            <h2 class="section__title">Quotes</h2>
+            <br> <br> <br>
+            <div class="quotes__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Quotes 1 -->
+                    <div class="quotes__content swiper-slide">
+                        <div class="quotes__data">
+                            <div class="quotes__header">
+                                <img src="assets/img/quotes1.jpg" alt="" class="quotes__img">
+
+                                <div>
+                                    <h3 class="quotes__name">Kevin Aluwi</h3>
+                                    <span class="quotes__sub">CEO Gojek</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="quotes__desc">
+                            Inti dari perusahaan teknologi adalah produk. 
+                            Pada akhirnya yang terpenting adalah bagaimana kita menjawab kebutuhan pengguna.
+                        </p>
+                    </div>
+
+                    <!-- Quotes 2 -->
+                    <div class="quotes__content swiper-slide">
+                        <div class="quotes__data">
+                            <div class="quotes__header">
+                                <img src="assets/img/quotes3.jpg" alt="" class="quotes__img">
+
+                                <div>
+                                    <h3 class="quotes__name">William Tanuwijaya</h3>
+                                    <span class="quotes__sub">CEO Tokopedia</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="quotes__desc">
+                            Kami percaya kesuksesan itu hanya bisa diraih dengan cara
+                            membantu orang lain menjadi lebih sukses.
+                        </p>
+                    </div>
+
+                    <!-- Quotes 3 -->
+                    <div class="quotes__content swiper-slide">
+                        <div class="quotes__data">
+                            <div class="quotes__header">
+                                <img src="assets/img/quotes2.jpg" alt="" class="quotes__img">
+
+                                <div>
+                                    <h3 class="quotes__name">Jeff Bezoz</h3>
+                                    <span class="quotes__sub">CEO Amazon</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="quotes__desc">
+                            Work hard, have fun and make history.
+                        </p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-quotes"></div>
+            </div>
+        </section>
+
+        <!-- Contact Me -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+                        
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+6281991181804</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">faizalajiwibowo7@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Tegal, Central Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form action="#" class="contact__form grid">
+                    <div class="contact__inputs grid"> 
+                        <div class="contact__content"> 
+                            <label for="#" class="contact__label">Name</label>
+                            <input type="text" class="contact__input" name="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="#" class="contact__label">Email</label>
+                            <input type="email" class="contact__input" name="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="#" class="contact__label">Topic</label>
+                        <input type="text" class="contact__input" name="topic" placeholder="Enter your topic">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="#" class="contact__label">Message</label>
+                        <textarea class="contact__input" name="message" placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <div class="button--area">
+                        <button type="submit">Send
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+                        <span>Sending your message...</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h2 class="footer__title">Faizal</h2>
+                    <span class="footer__subtitle">Student</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#history" class="footer__link">History</a>
+                    </li>
+
+                    <li>
+                        <a href="#portofolio" class="footer__link">Portofolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://web.facebook.com/faizal.java.10/" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/faizalajiw" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copyright">&#169; Faizal Aji Wibowo. All rigth reserved</p>
+        </div>
+    </footer>
+
+    <!-- scroll top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
