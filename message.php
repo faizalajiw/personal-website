@@ -10,7 +10,7 @@
       if(filter_var($email, FILTER_VALIDATE_EMAIL)){ //jika user memasukkan email yg valid
          $receiver = "faizalajiwibowo9@gmail.com"; //email penerima
          $subject = "From: $name <$email>"; //nanti bakal keliatan contohnya From: Faizal <blabla@gmail.com>
-         $body = "Name: $name\r\nEmail: $email\r\nTopic: $topic\r\nMessage: $message\r\nRegards,\r\n$name";
+         $body = "Name: $name\nEmail: $email\nTopic: $topic\n\nMessage: $message\n\nRegards,\n$name";
          $sender = "From: $email"; //email pengirim
          if(mail($receiver, $subject, $body, $sender)){ //mail() itu syntax php function buat ngirim email
             echo "Success!";
