@@ -8,7 +8,7 @@
 
    if(!empty($email) && !empty($message)){ //jika email dan message tidak diisi 
       if(filter_var($email, FILTER_VALIDATE_EMAIL)){ //jika user memasukkan email yg valid
-         $receiver = "faizalajiwibowo7@gmail.com"; //email penerima
+         $receiver = "faizalajiwibowo9@gmail.com"; //email penerima
          $subject = "From: $name <$email>"; //nanti bakal keliatan contohnya From: Faizal <blabla@gmail.com>
          $body = "Name: $name\nEmail: $email\nTopic: $topic\n\nMessage: $message\n\nRegards,\n$name";
          $sender = "From: $email"; //email pengirim
