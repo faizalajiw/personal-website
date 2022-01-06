@@ -29,14 +29,14 @@ if (!empty($email) && !empty($message)) { //jika email dan message tidak diisi
          $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
          $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
          $mail->Username   = 'faizalajiwibowo51@gmail.com';                     //SMTP username
-         $mail->Password   = 'Pasdasatya3';                               //SMTP password
+         $mail->Password   = 'pasdasatya3';                               //SMTP password
          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
          $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
          //Recipients
          $mail->setFrom('faizalajiwibowo51@gmail.com', 'Agent Faizal');
          $mail->addAddress($receiver);
-         $mail->addAddress('faizalajiwibowo9@gmail.com');
+         // $mail->addAddress('faizalajiwibowo9@gmail.com');
 
 
          //Content
