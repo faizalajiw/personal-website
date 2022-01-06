@@ -17,7 +17,7 @@ $message = $_POST['message'];
 
 if (!empty($email) && !empty($message)) { //jika email dan message tidak diisi 
    if (filter_var($email, FILTER_VALIDATE_EMAIL)) { //jika user memasukkan email yg valid
-      $receiver = "faizalajiwibowo9@gmail.com"; //email penerima
+      $receiver = "faizalajiwibowo51@gmail.com"; //email penerima
       $subject = "From: $name <$email>"; //nanti bakal keliatan contohnya From: Faizal <blabla@gmail.com>
       $body = "Name: $name\nEmail: $email\nTopic: $topic\n\nMessage: $message\n\nRegards,\n$name";
       $sender = "From: $email"; //email pengirim
@@ -28,15 +28,15 @@ if (!empty($email) && !empty($message)) { //jika email dan message tidak diisi
          $mail->isSMTP();                                            //Send using SMTP
          $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
          $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-         $mail->Username   = 'agent@alfauzikri.my.id';                     //SMTP username
-         $mail->Password   = 'xxxxx';                               //SMTP password
+         $mail->Username   = 'faizalajiwibowo51@gmail.com';                     //SMTP username
+         $mail->Password   = 'Pasdasatya3';                               //SMTP password
          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
          $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
          //Recipients
-         $mail->setFrom('agent@alfauzikri.my.id', 'Agent Alfin');
+         $mail->setFrom('faizalajiwibowo51@gmail.com', 'Agent Faizal');
          $mail->addAddress($receiver);
-         $mail->addAddress('iyalfin@gmail.com');
+         $mail->addAddress('faizalajiwibowo9gmail.com');
 
 
          //Content
