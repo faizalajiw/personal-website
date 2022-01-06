@@ -34,9 +34,9 @@ if (!empty($email) && !empty($message)) { //jika email dan message tidak diisi
          $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
          //Recipients
-         $mail->setFrom('faizalajiwibowo51@gmail.com', 'Agent Faizal');
+         $mail->setFrom('faizalajiwibowo51@gmail.com', 'Agent faizal');
          $mail->addAddress($receiver);
-         // $mail->addAddress('faizalajiwibowo9@gmail.com');
+         $mail->addAddress('iyalfin@gmail.com');
 
 
          //Content
