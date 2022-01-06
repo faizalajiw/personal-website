@@ -36,7 +36,7 @@ if (!empty($email) && !empty($message)) { //jika email dan message tidak diisi
          //Recipients
          $mail->setFrom('faizalajiwibowo51@gmail.com', 'Agent faizal');
          $mail->addAddress($receiver);
-         $mail->addAddress('iyalfin@gmail.com');
+         // $mail->addAddress('iyalfin@gmail.com');
 
 
          //Content
