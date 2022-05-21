@@ -497,40 +497,6 @@ form .button--area{
     font-weight: var(--font-medium);
 }
 
-.skills__bar,
-.skills__percen{
-    height: 5px;
-    border-radius: .25rem;
-}
-
-.skills__bar{
-    background-color: var(--first-color-lighter);
-}
-
-.skills__percen{
-    display: block;
-    background-color: var(--first-color);
-}
-
-.skills__html,
-.skills__css,
-.skills__figma,
-.skills__vscode,
-.skills__colab{
-    width: 50%;
-}
-
-.skills__python{
-    width: 25%;
-}
-.skills__r{
-    width: 15%;
-}
-
-.skills__canva{
-    width: 75%;
-}
-
 .skills__open .skills__list{
     height: max-content;
     margin-bottom: var(--mb-2-5);
@@ -705,42 +671,6 @@ form .button--area{
 .interested__img{
     width: 232px;
     justify-self: center;
-}
-
-/* quotes */
-.quotes__data,
-.quotes__header{
-    display: flex;
-}
-
-.quotes__data{
-    justify-content: space-between;
-    margin-bottom: var(--mb-1);
-}
-
-.quotes__img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-right: var(--mb-0-75);
-}
-
-.quotes__name{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-}
-
-.quotes__sub{
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-}
-
-.quotes__desc{
-    margin-bottom: var(--mb-2-5);
-}
-
-.swiper-container .swiper-pagination-quotes{
-    bottom: 0;
 }
 
 /* Contact Me */
